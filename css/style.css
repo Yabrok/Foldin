@@ -465,4 +465,20 @@ img {
   line-height: 19px;
   color: #252D35;
   text-decoration: none;
+}
+
+.main-header {
+  padding: 20px 0;
+}
+
+.main-header__inner {
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.active {
+  color: #252D35;
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
