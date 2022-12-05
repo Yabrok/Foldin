@@ -1,0 +1,148 @@
+.site-footer {
+  border-top: 1px solid rgba(37, 45, 53, 0.2);
+}
+
+.site-footer__top {
+  padding: 30px 0;
+
+  display: flex;
+}
+
+.logo-footer {
+  margin: 0 0 23px;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials__link {
+  display: inline-block;
+  text-decoration: none;
+
+  &+& {
+    margin-left: 40px;
+  }
+}
+
+.footcontent {
+  display: flex;
+
+}
+
+.footcontent__inner {
+  margin-left: 63px;
+
+  &:nth-child(3) {
+    margin: 0;
+  }
+}
+
+.site-footer__subtitle {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #252D35;
+}
+
+.footcontent__list {
+  @include unlist;
+}
+
+.footcontent__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footcontent__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #252D35;
+  text-decoration: none;
+}
+
+.footcontent__item-active {
+  &::before {
+    content: 'Россия';
+    display: block;
+    font-size: 13px;
+    line-height: 12px;
+  }
+
+  &:nth-child(2)::before {
+    content: 'Москва';
+  }
+
+  &:nth-child(3)::before {
+    content: 'Санкт-Петербург';
+  }
+
+  &:nth-child(4)::before {
+    content: 'Почта';
+  }
+}
+
+.site-footer__formbox {
+  width: 1005px;
+  max-width: 280px;
+  margin-left: auto;
+}
+
+.site-footer__form {
+
+  display: flex;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer__input {
+  padding: 15px;
+  border: 2px solid #252D35;
+  background-color: transparent;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #252D35;
+    opacity: 0.5;
+  }
+}
+
+.site-footer__btn {
+  margin-left: 10px;
+  padding: 45px 20px;
+  background: #252D35;
+  border: 2px solid rgba(241, 245, 248, 0.3);
+  cursor: pointer;
+}
+
+.footbot {
+  padding: 10px 0;
+  border-top: 1px solid rgba(37, 45, 53, 0.2);
+
+}
+
+.footbot__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footbot__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #252D35;
+  opacity: 0.5;
+  text-decoration: none;
+}
