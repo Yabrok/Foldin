@@ -15,24 +15,23 @@
     opacity: 0.5;
 }
 
+.navbot__item-dropdown {
+    position: relative;
+}
+
 .navbot__item-dropdown:hover .dropdown-box {
     display: block;
 }
 
-.navbot__item-dropdown:hover {
-    body {
-        background: rgba(28, 36, 44, 0.5);
-    }
-}
 
 .dropdown-box {
     @include unlist;
     display: none;
     position: absolute;
-    top: 47px;
-    left: 93px;
+    top: 15px;
+    left: -337px;
     z-index: 10;
-    padding-top: 70px;
+    padding-top: 55px;
 }
 
 .dropdown {
