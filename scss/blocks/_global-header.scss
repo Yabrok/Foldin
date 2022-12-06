@@ -10,6 +10,117 @@
 }
 
 .active {
+    cursor: pointer;
     color: #252D35;
     opacity: 0.5;
+}
+
+.navbot__item-dropdown:hover .dropdown-box {
+    display: block;
+}
+
+.navbot__item-dropdown:hover {
+    body {
+        background: rgba(28, 36, 44, 0.5);
+    }
+}
+
+.dropdown-box {
+    @include unlist;
+    display: none;
+    position: absolute;
+    top: 47px;
+    left: 93px;
+    z-index: 10;
+    padding-top: 70px;
+}
+
+.dropdown {
+    padding: 40px 40px;
+    width: 1520px;
+    display: flex;
+    background: rgba(241, 245, 248, 0.8);
+    backdrop-filter: blur(25px);
+}
+
+.dropdown__list {
+    @include unlist;
+    width: 495px;
+    display: inline-block;
+    border-right: 2px solid rgba(37, 45, 53, 0.1);
+
+    &:nth-child(2) {
+        width: 585px;
+        padding-left: 25px;
+        padding-right: 0;
+    }
+}
+
+.dropdown__title {
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #252D35;
+    opacity: 0.5;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 34px;
+        height: 31px;
+        background-image: url('../../icons/dropdown-icon1.svg');
+        background-repeat: no-repeat;
+        margin-right: 10px;
+    }
+
+}
+
+.dropdown__title-2::before {
+    background-image: url('../../icons/dropdown-icon2.svg');
+}
+
+.dropdown__title-3 {
+    margin-bottom: 33px;
+
+    &::before {
+        background-image: url('../../icons/dropdown-icon3.svg');
+        width: 34px;
+        height: 34px;
+    }
+}
+
+.dropdown__title-4 {
+    margin-bottom: 0;
+
+    &::before {
+        width: 34px;
+        height: 34px;
+        background-image: url('../../icons/dropdown-icon4.svg');
+    }
+}
+
+.dropdown__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.dropdown__link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #252D35;
+    text-decoration: none;
+}
+
+.new {
+    color: #B8884B;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.dropdown__settings {
+    width: 380px;
+    padding-left: 25px;
 }
